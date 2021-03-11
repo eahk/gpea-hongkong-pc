@@ -20,7 +20,6 @@ export default props => {
           "plastic-community",
           "support-us"
         ]}
-        offset="1"
         currentClassName="isCurrent"
       >
         <li>

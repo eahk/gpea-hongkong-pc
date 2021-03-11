@@ -7,7 +7,7 @@ import Title from "../../assets/images/hero-video/title.svg";
 import BubbleBtn from "../../assets/images/hero-video/bubble-btn.svg";
 import BtnPlayVideo from "../../assets/images/btn-play-video.svg";
 
-import Video from "../../assets/videos/hero_video.mp4";
+// import Video from "../../assets/videos/hero_video.mp4";
 import Mp4 from "../../assets/videos/74de00be78f23d71a661f5ae523fded1.mp4";
 import Webm from "../../assets/videos/5e0fa84e1ed3057f82a6379aa7a7bb58.webm";
 

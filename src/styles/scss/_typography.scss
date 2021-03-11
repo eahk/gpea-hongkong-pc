@@ -4,19 +4,25 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,700,900");
 @font-face {
   font-family: "wt040";
-  src: url("../../assets/fonts/wt040.ttf") format("truetype");
+  // src: url("http://change.greenpeace.org.hk/static/fonts/wt040.ttf") format("truetype");
+  src: url("https://cors-anywhere.small-service.gpeastasia.org/change.greenpeace.org.hk/static/fonts/wt040.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "PingFang";
-  src: url("../../assets/fonts/PingFangRegular.ttf") format("truetype");
+  // src: url("http://change.greenpeace.org.hk/static/fonts/PingFangRegular.ttf") format("truetype");
+  src: url("https://cors-anywhere.small-service.gpeastasia.org/change.greenpeace.org.hk/static/fonts/wt040.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "KozGoProHeavy";
-  src: url("../../assets/fonts/KozGoProHeavy.otf") format("opentype");
+  // src: url("http://change.greenpeace.org.hk/static/fonts/KozGoProHeavy.otf") format("opentype");
+  src: url("https://cors-anywhere.small-service.gpeastasia.org/change.greenpeace.org.hk/static/fonts/wt040.ttf")
+    format("truetype");
 }
 
 //

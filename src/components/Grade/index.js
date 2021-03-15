@@ -12,7 +12,7 @@ import StickerGrade2 from "../../assets/images/GP_PlasticFreeStickers_grade2.png
 import "./index.scss";
 
 export default props => {
-  const { sectionId, deviceType } = props;
+  const { sectionId, devicetype } = props;
 
   return (
     <div>
@@ -21,8 +21,8 @@ export default props => {
         className="section-grade"
         style={{ backgroundImage: `url(${Background})` }}
       >
-        <div className={`section-content ${deviceType}`}>
-          <TitleRibbon deviceType={deviceType} src={Title} alt="走塑等級" />
+        <div className={`section-content ${devicetype}`}>
+          <TitleRibbon devicetype={devicetype} src={Title} alt="走塑等級" />
 
           <p>
             在「全城走塑」的參與店鋪外可找到白色或藍色徽章貼紙。
@@ -32,7 +32,7 @@ export default props => {
             就讓你我一起令這些徽章貼紙遍地開花。
           </p>
 
-          <div className={`sticker-wrapper ${deviceType}`}>
+          <div className={`sticker-wrapper ${devicetype}`}>
             <div className="sticker1">
               <img src={StickerGrade1} className="img" alt="一級走塑店鋪" />
               <div className="textbox">
@@ -59,7 +59,7 @@ export default props => {
         </div>
       </div>
 
-      <GradePlayer deviceType={deviceType} />
+      <GradePlayer devicetype={devicetype} />
     </div>
   );
 };

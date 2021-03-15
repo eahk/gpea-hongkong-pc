@@ -8,19 +8,19 @@ import "./index.scss";
 import GPLogo from "../../assets/images/gp-logo-2021-tc-white-lg.png";
 
 export default props => {
-  const { deviceType, showActions } = props;
+  const { devicetype, showActions } = props;
 
   return (
     <>
       <div className="footer">
         <SpeechBubbleJoinTeam
-          deviceType={deviceType}
+          devicetype={devicetype}
           showActions={showActions}
         />
 
-        <div className={`footer-content ${deviceType}`}>
+        <div className={`footer-content ${devicetype}`}>
           <img src={GPLogo} alt="GREENPEACE 綠色和平" className="logo" />
-          {deviceType === "mobile" ? (
+          {devicetype === "mobile" ? (
             <div>
               綠色和平是獨立的國際環保組織，通過科學研究、政策倡議及和平行動，揭露全球環境問題並提出相應解決方案。
               <br />

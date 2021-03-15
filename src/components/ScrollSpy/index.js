@@ -4,10 +4,10 @@ import Scrollspy from "react-scrollspy";
 import "./style.scss";
 
 export default props => {
-  const { deviceType, showActions } = props;
+  const { devicetype, showActions } = props;
 
   return (
-    <div className={`scrollspy ${deviceType} ${showActions ? "" : "hidden"}`}>
+    <div className={`scrollspy ${devicetype} ${showActions ? "" : "hidden"}`}>
       <Scrollspy
         className=""
         items={[

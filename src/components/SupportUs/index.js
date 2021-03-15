@@ -12,7 +12,7 @@ import Background from "../../assets/images/support-us/background.svg";
 import "./index.scss";
 
 export default props => {
-  const { deviceType } = props;
+  const { devicetype } = props;
 
   return (
     <div
@@ -20,12 +20,12 @@ export default props => {
       className="section-support-us"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className={`section-content ${deviceType}`}>
-        <TitleRibbon deviceType={deviceType} src={Title} alt="支持我們" />
+      <div className={`section-content ${devicetype}`}>
+        <TitleRibbon devicetype={devicetype} src={Title} alt="支持我們" />
 
         <div className="subtitle">推動全港走塑項目，需要你的熱心支持！</div>
         <div className="textbox">
-          {deviceType !== "mobile" ? (
+          {devicetype !== "mobile" ? (
             <p>
               請幫助綠色和平組織走塑小隊，身體力行走遍全港社區！
               <br />
@@ -66,7 +66,7 @@ export default props => {
           #有你有可能
         </div>
         <div className="textbox">
-          {deviceType !== "mobile" ? (
+          {devicetype !== "mobile" ? (
             <p>
               既然小店與您我也能做到，大企業也需要出一分力，
               <br />

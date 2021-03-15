@@ -14,7 +14,7 @@ import HtmlData from "./data";
 import "./style.scss";
 
 export default props => {
-  const { deviceType } = props;
+  const { devicetype } = props;
   const { id } = props.match.params;
   const history = useHistory();
   const filteredHtmlData = HtmlData.filter(d => d.id === id);
@@ -27,13 +27,13 @@ export default props => {
       {filteredHtmlData.length ? (
         <>
           <div
-            className={`banner ${deviceType}`}
+            className={`banner ${devicetype}`}
             style={{
               backgroundImage: `url(${filteredHtmlData[0].banner})`
             }}
           />
 
-          <div className={`section-content ${deviceType}`}>
+          <div className={`section-content ${devicetype}`}>
             <div className="head-bar">
               <div className="clickable" onClick={() => history.goBack()}>
                 <ButtonBack />

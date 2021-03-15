@@ -12,7 +12,7 @@ import CardData from "../../pages/CommunityStory/data";
 import "./index.scss";
 
 export default props => {
-  const { sectionId, deviceType } = props;
+  const { sectionId, devicetype } = props;
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 1 },
@@ -26,9 +26,9 @@ export default props => {
       className="section-community-story"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className={`section-content ${deviceType}`}>
-        <TitleRibbon deviceType={deviceType} src={Title} alt="社區故事" />
-        {deviceType !== "mobile" ? (
+      <div className={`section-content ${devicetype}`}>
+        <TitleRibbon devicetype={devicetype} src={Title} alt="社區故事" />
+        {devicetype !== "mobile" ? (
           <p>
             「為環境多走一步，係愛又係責任！」。
             <br />
@@ -49,7 +49,7 @@ export default props => {
         )}
       </div>
 
-      <div className={`carousel-wrapper ${deviceType}`}>
+      <div className={`carousel-wrapper ${devicetype}`}>
         <Carousel
           breakPoints={breakPoints}
           className="carousel-slice"
@@ -72,7 +72,7 @@ export default props => {
               <Link
                 to={`/communitystory/${card.id}`}
                 className="slice-button"
-                deviceType={deviceType}
+                devicetype={devicetype}
               >
                 <img src={BtnMore} alt="更多" />
               </Link>

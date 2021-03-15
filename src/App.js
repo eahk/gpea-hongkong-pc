@@ -30,7 +30,7 @@ function App() {
 
   const [pageResizing, setPageResizing] = useState(false);
   const [showActions, setShowActions] = useState(false);
-  const [deviceType, setDeviceType] = useState("mobile");
+  const [devicetype, setdevicetype] = useState("mobile");
   // const [isMobile, setIsMobile] = useState(checkMobile);
   // const [isTablet, setIsTablet] = useState(checkTablet);
   // const [isDekstop, setIsDesktop] = useState(checkDesktop);
@@ -74,15 +74,15 @@ function App() {
 
       if (window.innerWidth <= 768) {
         // setIsMobile(true);
-        setDeviceType("mobile");
+        setdevicetype("mobile");
         //} else if (!isMobile && window.innerWidth < 1400) {
       } else if (window.innerWidth > 768 && window.innerWidth < 1400) {
         // setIsTablet(true);
-        setDeviceType("tablet");
+        setdevicetype("tablet");
         //setShowFormModal(false);
       } else {
         // setIsDesktop(true);
-        setDeviceType("desktop");
+        setdevicetype("desktop");
       }
       setPageResizing(false);
     };
@@ -128,24 +128,24 @@ function App() {
               <Route
                 path="/communitystory/:id"
                 render={props => (
-                  <CommunityStory deviceType={deviceType} {...props} />
+                  <CommunityStory devicetype={devicetype} {...props} />
                 )}
               />
               <Route
                 path="/activity/:id"
                 render={props => (
-                  <Activity deviceType={deviceType} {...props} />
+                  <Activity devicetype={devicetype} {...props} />
                 )}
               />
               <Route
                 path="/"
                 render={() => (
-                  <Home deviceType={deviceType} showActions={showActions} />
+                  <Home devicetype={devicetype} showActions={showActions} />
                 )}
               />
             </Switch>
           </div>
-          <Footer deviceType={deviceType} showActions={showActions} />
+          <Footer devicetype={devicetype} showActions={showActions} />
         </main>
       </div>
     </HashRouter>

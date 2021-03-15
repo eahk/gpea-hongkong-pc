@@ -14,7 +14,7 @@ import Webm from "../../assets/videos/5e0fa84e1ed3057f82a6379aa7a7bb58.webm";
 import "./index.scss";
 
 export default props => {
-  const { sectionId, deviceType } = props;
+  const { sectionId, devicetype } = props;
   const [showVideo, setShowVideo] = useState(false);
 
   const handleShowVideo = () => {
@@ -27,21 +27,21 @@ export default props => {
     <>
       <div
         id={sectionId}
-        className={`section-hero ${deviceType} ${
+        className={`section-hero ${devicetype} ${
           showVideo ? "show-video" : ""
         }`}
       >
-        {showVideo || deviceType !== "mobile" ? (
+        {showVideo || devicetype !== "mobile" ? (
           // always show on tablet and desktop
           // show on mobile after click 播放影片 button
-          <div className={`video-container ${deviceType}`}>
+          <div className={`video-container ${devicetype}`}>
             <video muted autoPlay={true} poster={CoverSm} controls={true}>
               {/*<source src={Video} type="video/mp4" />*/}
               <source src={Mp4} type="video/mp4" />
               <source src={Webm} type="video/webm" />
             </video>
             {/* only show this text box on tablet and desktop */}
-            {deviceType !== "mobile" && (
+            {devicetype !== "mobile" && (
               <div className="text-box">
                 <img src={Title} className="title" alt="全城走塑" />
                 <p>
@@ -69,9 +69,9 @@ export default props => {
         ) : (
           // only show on mobile
           <div
-            className={`static-container ${deviceType}`}
+            className={`static-container ${devicetype}`}
             style={
-              deviceType === "mobile" && !showVideo
+              devicetype === "mobile" && !showVideo
                 ? { backgroundImage: `url(${CoverSm})` }
                 : null
             }
@@ -110,7 +110,7 @@ export default props => {
         )}
       </div>
 
-      <Intro deviceType={deviceType} />
+      <Intro devicetype={devicetype} />
     </>
   );
 };

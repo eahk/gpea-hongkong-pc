@@ -9,7 +9,7 @@ import BubbleBtn from "../../assets/images/intro/bubble-btn.svg";
 import "./index.scss";
 
 export default props => {
-  const { deviceType } = props;
+  const { devicetype } = props;
 
   return (
     <div
@@ -17,15 +17,15 @@ export default props => {
       className="section-intro"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className={`section-content ${deviceType}`}>
+      <div className={`section-content ${devicetype}`}>
         <img
-          src={deviceType === "mobile" ? ImgSm : ImgLg}
+          src={devicetype === "mobile" ? ImgSm : ImgLg}
           className="intro-img"
           alt="全城走塑 走塑優惠"
         />
 
         <div className="textbox">
-          {deviceType !== "mobile" ? (
+          {devicetype !== "mobile" ? (
             <div>
               <p>
                 綠色和平的「全城走塑計劃」集齊一眾走塑隊員

@@ -1,7 +1,7 @@
 // Import a Google Font
-// @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&subset=chinese-traditional");
 // https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=Noto%20Sans%20HK&bodyfontweight=400&lineheight=1.5&backgroundcolor=&fontcolor=%23333&preview=false
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,700,900");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;700;900&display=swap&subset=chinese-traditional");
+//
 @font-face {
   font-family: "wt040";
   // src: url("http://change.greenpeace.org.hk/static/fonts/wt040.ttf") format("truetype");
@@ -24,7 +24,6 @@
   src: url("https://cors-anywhere.small-service.gpeastasia.org/change.greenpeace.org.hk/static/fonts/wt040.ttf")
     format("truetype");
 }
-
 //
 html {
   font-size: 100%;
@@ -33,17 +32,14 @@ html {
 body {
   font-family: PingFang, "Noto Sans HK", "Microsoft JhengHei", "PingFang HK",
     "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
-  font-size: 19px; // default font-sizes 19px
-  line-height: 1.8;
+  // font-size: 19px; // default font-sizes 19px
+  line-height: 1.7;
   letter-spacing: 2px;
   color: var(--text);
-  /*
-  @media (max-width: 575.98px) {
-    body {
-      font-size: 14px;
-    }
-  }
-  */
+}
+
+body {
+  font-family: "Noto Sans HK", sans-serif !important;
 }
 
 p {

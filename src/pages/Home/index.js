@@ -12,20 +12,20 @@ import SupportUs from "../../components/SupportUs";
 import Scrollspy from "../../components/ScrollSpy";
 
 export default props => {
-  const { deviceType, showActions } = props;
+  const { devicetype, showActions } = props;
 
   return (
     <div>
-      <Hero sectionId="top" deviceType={deviceType} />
-      <LiveFigure sectionId="live-figure" deviceType={deviceType} />
-      <Timeline sectionId="timeline" deviceType={deviceType} />
-      <Join sectionId="join" deviceType={deviceType} />
-      <Grade sectionId="grade" deviceType={deviceType} />
-      <Activity sectionId="activity" deviceType={deviceType} />
-      <CommunityStory sectionId="community-story" deviceType={deviceType} />
-      <PlasticCommunity sectionId="plastic-community" deviceType={deviceType} />
-      <SupportUs sectionId="support-us" deviceType={deviceType} />
-      <Scrollspy deviceType={deviceType} showActions={showActions} />
+      <Hero sectionId="top" devicetype={devicetype} />
+      <LiveFigure sectionId="live-figure" devicetype={devicetype} />
+      <Timeline sectionId="timeline" devicetype={devicetype} />
+      <Join sectionId="join" devicetype={devicetype} />
+      <Grade sectionId="grade" devicetype={devicetype} />
+      <Activity sectionId="activity" devicetype={devicetype} />
+      <CommunityStory sectionId="community-story" devicetype={devicetype} />
+      <PlasticCommunity sectionId="plastic-community" devicetype={devicetype} />
+      <SupportUs sectionId="support-us" devicetype={devicetype} />
+      <Scrollspy devicetype={devicetype} showActions={showActions} />
     </div>
   );
 };

@@ -25,15 +25,15 @@ let districtList = [];
 // Sort disticts by regions and number of restaurants
 
 export default props => {
-  const { sectionId, deviceType } = props;
+  const { sectionId, devicetype } = props;
   const [chosenDistrictId, setChosenDistrictId] = useState(null);
   const [districts, restaurants] = useDistrictRestaurans();
 
   return (
     <div id={sectionId} className="section-plastic-community">
-      <div className={`section-content ${deviceType}`}>
-        <TitleRibbon deviceType={deviceType} src={Title} alt="走塑地圖" />
-        {deviceType !== "mobile" ? (
+      <div className={`section-content ${devicetype}`}>
+        <TitleRibbon devicetype={devicetype} src={Title} alt="走塑地圖" />
+        {devicetype !== "mobile" ? (
           <p>
             立即尋找「全城走塑」商戶位置，
             <br />

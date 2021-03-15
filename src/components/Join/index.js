@@ -9,7 +9,7 @@ import ShowMoreButton from "../../assets/images/join/show-more-button.svg";
 import "./index.scss";
 
 export default props => {
-  const { sectionId, deviceType } = props;
+  const { sectionId, devicetype } = props;
   const [showBubbleNo, setBubbleToShow] = useState(0);
 
   // Show one bubble
@@ -28,9 +28,9 @@ export default props => {
       className="section-join"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className={`section-content ${deviceType}`}>
-        <TitleRibbon deviceType={deviceType} src={Title} alt="加入團隊" />
-        {deviceType !== "mobile" ? (
+      <div className={`section-content ${devicetype}`}>
+        <TitleRibbon devicetype={devicetype} src={Title} alt="加入團隊" />
+        {devicetype !== "mobile" ? (
           <p>
             你想參與新手隊員體驗日，或落手落腳策劃走塑行動，
             <br />
@@ -49,7 +49,7 @@ export default props => {
         )}
 
         <div className="hashtag">#有你有可能</div>
-        <div className={`level-ladder ${deviceType}`}>
+        <div className={`level-ladder ${devicetype}`}>
           <img src={LevelLadder} alt="" />
 
           <div className="desc">

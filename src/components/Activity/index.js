@@ -11,7 +11,7 @@ import CardData from "../../pages/Activity/data";
 import "./index.scss";
 
 export default props => {
-  const { sectionId, deviceType } = props;
+  const { sectionId, devicetype } = props;
 
   return (
     <div
@@ -19,15 +19,15 @@ export default props => {
       className="section-activity"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className={`section-content ${deviceType}`}>
-        <TitleRibbon deviceType={deviceType} src={Title} alt="活動情報" />
+      <div className={`section-content ${devicetype}`}>
+        <TitleRibbon devicetype={devicetype} src={Title} alt="活動情報" />
 
-        <div className={`activity-wrapper ${deviceType}`}>
+        <div className={`activity-wrapper ${devicetype}`}>
           {CardData.map(card => (
             <Link
               key={card.id}
               to={`/activity/${card.id}`}
-              deviceType={deviceType}
+              devicetype={devicetype}
             >
               <div className="card">
                 <div

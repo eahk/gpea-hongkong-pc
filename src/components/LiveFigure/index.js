@@ -12,7 +12,7 @@ import Circle from "../../assets/images/live-figure/circle.svg";
 import "./index.scss";
 
 export default props => {
-  const { sectionId, deviceType } = props;
+  const { sectionId, devicetype } = props;
   const [isShowMembers, setIsShowMembers] = useState(true);
   const [members, restaurants] = useLiveFigures();
 
@@ -37,12 +37,12 @@ export default props => {
       className="section-live-figure"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className={`section-content ${deviceType}`}>
+      <div className={`section-content ${devicetype}`}>
         <div className="title-wrapper">
           <img
             src={titleRibbon.img}
             alt={titleRibbon.alt}
-            className={`title-ribbon ${deviceType}`}
+            className={`title-ribbon ${devicetype}`}
           />
         </div>
 

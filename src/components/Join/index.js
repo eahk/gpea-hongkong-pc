@@ -126,7 +126,7 @@ export default props => {
             className={`bubble-box ${showBubbleNo === 4 ? "isShow" : ""}`}
           >
             <div className="text-box">
-              <div className="subtitle">社區遊擊小隊</div>
+              <div className="subtitle">社區游擊小隊</div>
               透過網上連結其他隊員，把走塑任務融入日常生活中，隨時隨地發掘走塑店舖及故事。
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import Intro from "../../components/Intro";
 import ExternalLink from "../common/externalLink";
 
@@ -13,9 +13,23 @@ import Webm from "../../assets/videos/5e0fa84e1ed3057f82a6379aa7a7bb58.webm";
 
 import "./index.scss";
 
+function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+  return size;
+}
+
 export default props => {
   const { sectionId, devicetype } = props;
   const [showVideo, setShowVideo] = useState(false);
+  const [width, height] = useWindowSize();
 
   const handleShowVideo = () => {
     setShowVideo(true);
@@ -72,8 +86,8 @@ export default props => {
             className={`static-container ${devicetype}`}
             style={
               devicetype === "mobile" && !showVideo
-                ? { backgroundImage: `url(${CoverSm})` }
-                : null
+                ? { backgroundImage: `url(${CoverSm})`, height: `${height}px` }
+                : {}
             }
           >
             <div className="text-box">

@@ -21,6 +21,7 @@ function useWindowSize() {
     }
     window.addEventListener("resize", updateSize);
     updateSize();
+    console.log("resized");
     return () => window.removeEventListener("resize", updateSize);
   }, []);
   return size;
@@ -86,7 +87,11 @@ export default props => {
             className={`static-container ${devicetype}`}
             style={
               devicetype === "mobile" && !showVideo
-                ? { backgroundImage: `url(${CoverSm})`, height: `${height}px` }
+                ? {
+                    backgroundImage: `url(${CoverSm})`,
+                    height: `${height}px`,
+                    minHeight: `${height}px`
+                  }
                 : {}
             }
           >

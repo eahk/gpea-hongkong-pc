@@ -5,23 +5,24 @@
 @font-face {
   font-family: "wt040";
   // src: url("http://change.greenpeace.org.hk/static/fonts/wt040.ttf") format("truetype");
-  src: url("https://cors-anywhere.small-service.gpeastasia.org/change.greenpeace.org.hk/static/fonts/wt040.ttf")
+  src: url("https://change.greenpeace.org.hk/app/plastic-community/fonts/wt040.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+/*
 @font-face {
   font-family: "PingFang";
-  // src: url("http://change.greenpeace.org.hk/static/fonts/PingFangRegular.ttf") format("truetype");
   src: url("https://cors-anywhere.small-service.gpeastasia.org/change.greenpeace.org.hk/static/fonts/wt040.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+*/
 @font-face {
   font-family: "KozGoProHeavy";
   // src: url("http://change.greenpeace.org.hk/static/fonts/KozGoProHeavy.otf") format("opentype");
-  src: url("https://cors-anywhere.small-service.gpeastasia.org/change.greenpeace.org.hk/static/fonts/wt040.ttf")
+  src: url("https://change.greenpeace.org.hk/app/plastic-community/fonts/KozGoProHeavy.otf")
     format("truetype");
 }
 //
@@ -32,7 +33,7 @@ html {
 body {
   font-family: PingFang, "Noto Sans HK", "Microsoft JhengHei", "PingFang HK",
     "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
-  // font-size: 19px; // default font-sizes 19px
+  font-size: 19px; // default font-sizes 19px
   line-height: 1.7;
   letter-spacing: 2px;
   color: var(--text);

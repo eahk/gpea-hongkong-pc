@@ -40,8 +40,10 @@ export default props => {
           <Social />
           <div className="copyright">&copy; GREENPEACE 2021</div>
           <div className="splite-line"></div>
+          {/*
           <div className="notice">
             <p>注意事項</p>
+
             <p>
               此捐款頁面採用了SSL保安接層加密技術，可確保敏感資料（例如信用卡資料和個人資料）在您的瀏覽器和我們伺服器之間傳送時獲得保密處理。
               <br />
@@ -70,6 +72,7 @@ export default props => {
               獲豁免繳稅慈善機構編號︰ 91/5418
             </p>
           </div>
+          */}
         </div>
       </div>
     </>

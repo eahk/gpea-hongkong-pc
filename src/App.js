@@ -24,16 +24,10 @@ import Footer from "./components/Footer";
 window.ee = new mitt();
 
 function App() {
-  // let checkMobile = window.innerWidth <= 768;
-  // let checkTablet = window.innerWidth > 769 && window.innerWidth < 1400;
-  // let checkDesktop = window.innerWidth >= 1400;
-
+  const [isLoaded, setisLoaded] = useState(false);
   const [pageResizing, setPageResizing] = useState(false);
   const [showActions, setShowActions] = useState(false);
   const [devicetype, setdevicetype] = useState("mobile");
-  // const [isMobile, setIsMobile] = useState(checkMobile);
-  // const [isTablet, setIsTablet] = useState(checkTablet);
-  // const [isDekstop, setIsDesktop] = useState(checkDesktop);
   //const [browserWidth, setBrowserWidth] = useState(window.innerWidth);
   const [showFormModal, setShowFormModal] = useState(false);
   //const [enFormSubmitted, setEnFormSubmitted] = useState(false);
@@ -70,6 +64,7 @@ function App() {
     };
     const handleWindowResize = () => {
       setPageResizing(true);
+      setisLoaded(false);
       //setBrowserWidth(window.innerWidth);
 
       if (window.innerWidth < 768) {
@@ -85,6 +80,7 @@ function App() {
         setdevicetype("desktop");
       }
       setPageResizing(false);
+      setisLoaded(true);
     };
     window.addEventListener("load", handleWindowResize);
     window.addEventListener("scroll", handleScroll, false);
@@ -120,7 +116,7 @@ function App() {
             <img src={gpLogo} alt="greenpeace logo" />
           </div>
         )}
-        <main className="main">
+        <main className={cx("main", { "fade-in": isLoaded })}>
           <div className="main-container">
             <Navbar />
             <Switch>

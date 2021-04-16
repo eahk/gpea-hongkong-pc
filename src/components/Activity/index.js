@@ -46,12 +46,14 @@ export default props => {
             </Link>
           ))}
           <div class="center">
-            <div className="card-title">Coming Soon</div>
-            <ul>
-              <li>嘉賓分享 ‧ 社區走塑經驗分享會</li>
-              <li>社區走塑共學TEAM</li>
-              <li>...</li>
-            </ul>
+            <div className="caption">
+              <div className="card-title">Coming soon</div>
+              <ul>
+                <li>嘉賓分享 ‧ 社區走塑經驗分享會</li>
+                <li>社區走塑共學TEAM</li>
+                <li>...</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

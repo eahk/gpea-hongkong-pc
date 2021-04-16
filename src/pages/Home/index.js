@@ -30,7 +30,7 @@ export default props => {
           element.scrollIntoView();
           // window.location.hash = "";
         }
-      }, 0);
+      }, 100);
     }
   }
 

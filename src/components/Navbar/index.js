@@ -16,7 +16,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <HashLink to="#" className="navbar-logo" onClick={closeMobileMenu}>
+          <HashLink to="/#" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={GPLogo} className="xxgp-logo" alt="GREENPEACE 綠色和平" />
           </HashLink>
 

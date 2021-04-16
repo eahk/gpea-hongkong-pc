@@ -34,6 +34,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.3.1",
     "react-scripts": "3.4.0",
+    "react-scrollable-url": "^1.5.1",
     "react-scrollspy": "^3.4.3",
     "sanitize.css": "^11.0.0",
     "styled-components": "^5.0.0",

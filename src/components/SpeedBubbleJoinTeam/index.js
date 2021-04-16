@@ -3,7 +3,8 @@ import styled from "styled-components";
 import ExternalLink from "../common/externalLink";
 
 import SpeechBubble from "../../assets/images/speech-bubble-join-team.svg";
-import ReportNow from "../../assets/images/report-now.svg";
+// import ReportNow from "../../assets/images/report-now.svg";
+import ReportNow from "../../assets/images/訂閱最新情報.png";
 
 const Wrapper = styled.div`
   position: fixed;
@@ -38,7 +39,7 @@ export default props => {
   return (
     <Wrapper devicetype={devicetype} showActions={showActions}>
       <ExternalLink href="https://forms.gle/2dPnfkPtu6QNWzWZ7">
-        <Report devicetype={devicetype} src={ReportNow} alt="即時報料" />
+        <Report devicetype={devicetype} src={ReportNow} alt="訂閱最新情報" />
       </ExternalLink>
       <ExternalLink href="https://docs.google.com/forms/d/e/1FAIpQLSflWGgOGtCzeTKDmdQJXf3hf0rHncVZcrWLeadc1TEN7P1Yeg/viewform">
         <Bubble

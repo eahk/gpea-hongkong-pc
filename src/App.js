@@ -9,7 +9,7 @@ import "swiper/css/swiper.css";
 import "./styles/App.scss";
 import gpLogo from "./assets/images/GP-logo-2019-TC-green-[web]-01.png";
 
-import { Route, Switch, HashRouter, BrowserRouter } from "react-router-dom";
+import { Router, Route, Switch, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import CommunityStory from "./pages/CommunityStory/";
@@ -72,11 +72,11 @@ function App() {
       setPageResizing(true);
       //setBrowserWidth(window.innerWidth);
 
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth < 768) {
         // setIsMobile(true);
         setdevicetype("mobile");
         //} else if (!isMobile && window.innerWidth < 1400) {
-      } else if (window.innerWidth > 768 && window.innerWidth < 1400) {
+      } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
         // setIsTablet(true);
         setdevicetype("tablet");
         //setShowFormModal(false);
@@ -113,7 +113,7 @@ function App() {
   //   });
   // }, []);
   return (
-    <HashRouter>
+    <HashRouter hashType="noslash">
       <div className={cx("app", { "modal-open": showFormModal })}>
         {pageResizing && (
           <div className="loading--overlay">
@@ -123,7 +123,6 @@ function App() {
         <main className="main">
           <div className="main-container">
             <Navbar />
-
             <Switch>
               <Route
                 path="/communitystory/:id"

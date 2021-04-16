@@ -15,7 +15,7 @@ export default props => {
   const { sectionId, devicetype } = props;
 
   return (
-    <div>
+    <>
       <div
         id={sectionId}
         className="section-grade"
@@ -60,6 +60,6 @@ export default props => {
       </div>
 
       <GradePlayer devicetype={devicetype} />
-    </div>
+    </>
   );
 };

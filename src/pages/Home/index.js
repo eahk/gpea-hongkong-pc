@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Hero from "../../components/Hero";
 import LiveFigure from "../../components/LiveFigure";
@@ -14,6 +14,29 @@ import Scrollspy from "../../components/ScrollSpy";
 export default props => {
   const { devicetype, showActions } = props;
 
+  function hashLinkScroll() {
+    console.log("hashLinkScroll");
+    const { hash } = window.location;
+    if (hash !== "") {
+      // Push onto callback queue so it runs after the DOM is updated,
+      // this is required when navigating from a different page so that
+      // the element is rendered on the page before trying to getElementById.
+      setTimeout(() => {
+        const id = hash.replaceAll("#", "").replaceAll("/", "");
+        // .replace("%23", "");
+        const element = document.getElementById(id);
+        console.log(id, element);
+        if (element) {
+          element.scrollIntoView();
+          // window.location.hash = "";
+        }
+      }, 0);
+    }
+  }
+
+  useEffect(() => {
+    hashLinkScroll();
+  }, []);
   return (
     <div>
       <Hero sectionId="top" devicetype={devicetype} />

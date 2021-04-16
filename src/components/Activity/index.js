@@ -23,7 +23,7 @@ export default props => {
         <TitleRibbon devicetype={devicetype} src={Title} alt="活動情報" />
 
         <div className={`activity-wrapper ${devicetype}`}>
-          {CardData.map(card => (
+          {CardData.map((card, i, arr) => (
             <Link
               key={card.id}
               to={`/activity/${card.id}`}
@@ -45,6 +45,14 @@ export default props => {
               </div>
             </Link>
           ))}
+          <div class="center">
+            <div className="card-title">Coming Soon</div>
+            <ul>
+              <li>嘉賓分享 ‧ 社區走塑經驗分享會</li>
+              <li>社區走塑共學TEAM</li>
+              <li>...</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

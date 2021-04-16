@@ -1,3 +1,19 @@
+.center {
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  ul {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
 .section-activity {
   width: 100%;
   position: relative;
@@ -8,7 +24,7 @@
   //min-height: 100vh;
 
   .section-content {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 120px 20px 160px;
     display: flex;
@@ -31,11 +47,11 @@
       gap: 20px;
 
       .card {
+        overflow: hidden;
+        border-radius: 8px;
         width: 100%;
         //max-width: 330px;
         background-color: white;
-        border: none;
-        border-radius: 0;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 
         .img-frame {

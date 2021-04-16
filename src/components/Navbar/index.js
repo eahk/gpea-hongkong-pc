@@ -16,11 +16,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <HashLink
-            to="/#top"
-            className="navbar-logo"
-            onClick={closeMobileMenu}
-          >
+          <HashLink to="#" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={GPLogo} className="xxgp-logo" alt="GREENPEACE 綠色和平" />
           </HashLink>
 
@@ -31,6 +27,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <HashLink
+                smooth
                 to="/#intro"
                 className="nav-links"
                 onClick={closeMobileMenu}
@@ -40,6 +37,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <HashLink
+                smooth
                 to="/#timeline"
                 className="nav-links"
                 onClick={closeMobileMenu}
@@ -49,6 +47,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <HashLink
+                smooth
                 to="/#join"
                 className="nav-links"
                 onClick={closeMobileMenu}
@@ -58,6 +57,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <HashLink
+                smooth
                 to="/#grade"
                 className="nav-links"
                 onClick={closeMobileMenu}
@@ -67,6 +67,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <HashLink
+                smooth
                 to="/#activity"
                 className="nav-links"
                 onClick={closeMobileMenu}
@@ -76,6 +77,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <HashLink
+                smooth
                 to="/#community-story"
                 className="nav-links"
                 onClick={closeMobileMenu}
@@ -85,6 +87,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <HashLink
+                smooth
                 to="/#plastic-community"
                 className="nav-links"
                 onClick={closeMobileMenu}
@@ -94,6 +97,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <HashLink
+                smooth
                 to="/#support-us"
                 className="nav-links"
                 onClick={closeMobileMenu}

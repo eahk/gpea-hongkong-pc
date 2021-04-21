@@ -31,7 +31,7 @@ const data = [
   },
   {
     id: "2",
-    title: "游擊小隊最新大型行動 - 走塑大Hunt「現正招募中」",
+    title: "游擊小隊最新大型行動 - 走塑大Hunt",
     date: "「現正招募中」",
     thumbnail: require("../../assets/images/activity/activity2/IMG_4249_thunbnail.jpg"),
     banner: require("../../assets/images/activity/activity2/IMG_4249_long.jpg"),

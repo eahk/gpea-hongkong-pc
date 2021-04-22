@@ -9,12 +9,12 @@ import ReportNow from "../../assets/images/訂閱最新情報.png";
 const Wrapper = styled.div`
   position: fixed;
   right: 20px;
-  bottom: 10px;
+  bottom: 20px;
   z-index: 1;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 12px;
   transition: all 0.2s;
   flex-direction: ${({ devicetype }) =>
     devicetype === "mobile" ? "column" : "row"};
@@ -22,14 +22,14 @@ const Wrapper = styled.div`
 `;
 
 const Bubble = styled.img`
-  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
   cursor: pointer;
   width: ${({ devicetype }) => (devicetype === "mobile" ? "100px" : "150px")};
 `;
 
 const Report = styled.img`
   margin-top: 5px;
-  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
   width: ${({ devicetype }) => (devicetype === "mobile" ? "60px" : "100px")};
 `;
 
@@ -38,7 +38,7 @@ export default props => {
 
   return (
     <Wrapper devicetype={devicetype} showActions={showActions}>
-      <ExternalLink href="https://forms.gle/2dPnfkPtu6QNWzWZ7">
+      <ExternalLink href="https://forms.gle/S8CMJmLRzdH1tYpp9">
         <Report devicetype={devicetype} src={ReportNow} alt="訂閱最新情報" />
       </ExternalLink>
       <ExternalLink href="https://docs.google.com/forms/d/e/1FAIpQLSflWGgOGtCzeTKDmdQJXf3hf0rHncVZcrWLeadc1TEN7P1Yeg/viewform">

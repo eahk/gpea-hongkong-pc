@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+import Fade from "react-reveal/Fade";
 import Hero from "../../components/Hero";
 import LiveFigure from "../../components/LiveFigure";
 import Timeline from "../../components/Timeline";
@@ -39,15 +40,36 @@ export default props => {
   }, []);
   return (
     <div>
-      <Hero sectionId="top" devicetype={devicetype} />
-      <LiveFigure sectionId="live-figure" devicetype={devicetype} />
-      <Timeline sectionId="timeline" devicetype={devicetype} />
-      <Join sectionId="join" devicetype={devicetype} />
-      <Grade sectionId="grade" devicetype={devicetype} />
-      <Activity sectionId="activity" devicetype={devicetype} />
-      <CommunityStory sectionId="community-story" devicetype={devicetype} />
-      <PlasticCommunity sectionId="plastic-community" devicetype={devicetype} />
-      <SupportUs sectionId="support-us" devicetype={devicetype} />
+      <Fade>
+        <Hero sectionId="top" devicetype={devicetype} />
+      </Fade>
+      <Fade>
+        <LiveFigure sectionId="live-figure" devicetype={devicetype} />
+      </Fade>
+      <Fade>
+        <Timeline sectionId="timeline" devicetype={devicetype} />
+      </Fade>
+      <Fade>
+        <Join sectionId="join" devicetype={devicetype} />
+      </Fade>
+      <Fade>
+        <Grade sectionId="grade" devicetype={devicetype} />
+      </Fade>
+      <Fade>
+        <Activity sectionId="activity" devicetype={devicetype} />
+      </Fade>
+      <Fade>
+        <CommunityStory sectionId="community-story" devicetype={devicetype} />
+      </Fade>
+      <Fade>
+        <PlasticCommunity
+          sectionId="plastic-community"
+          devicetype={devicetype}
+        />
+      </Fade>
+      <Fade>
+        <SupportUs sectionId="support-us" devicetype={devicetype} />
+      </Fade>
       <Scrollspy devicetype={devicetype} showActions={showActions} />
     </div>
   );

@@ -88,7 +88,11 @@ const data = [
           是次網上共學教室只是頭炮活動！目標是召集各路人馬參與即將舉行的「社區走塑工作坊」，透過一連串工作坊，一起設計社區走塑項目，一起推動社區走塑措施，一起游說街坊在日常生活走塑，改變膠運，共建全城走塑的理想社區。因為多您一個好多，綠色和平誠邀您立即報名！
         </p>
         <p>立即click link參加「社區走塑工作坊」：</p>✅
-        <a href="https://forms.gle/PxY6YNNsYjwqbrnw7" target="_blank">
+        <a
+          href="https://forms.gle/PxY6YNNsYjwqbrnw7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           https://forms.gle/PxY6YNNsYjwqbrnw7
         </a>
       </>
@@ -97,7 +101,7 @@ const data = [
   {
     id: "4",
     title: "一連四日 - 社區走塑工作坊",
-    date: "「21/6 截止報名! 」",
+    date: "「21/6 截止報名！」",
     thumbnail: require("../../assets/images/activity/activity4/20210508_SSPHunting_38.jpg"),
     banner: require("../../assets/images/activity/activity4/20210508_SSPHunting_38_long.jpg"),
     content: (
@@ -113,26 +117,36 @@ const data = [
           <br />
           如果你想一手一腳把你關心的社區打造成走塑社區，
           <br />
-          誠邀你參與即將舉行的社區走塑工作坊!
+          誠邀你參與即將舉行的社區走塑工作坊！
         </p>
         <p>
           工作坊會探討塑膠污染問題，提供基礎環保倡議技巧訓練，並集思廣益，一齊設計社區走塑項目
         </p>
-        <h3>機會來了，請立即報名 2021 「社區走塑工作坊」啦！！</h3>
+        <h3>機會來了，請立即報名 2021「社區走塑工作坊」啦！！</h3>
         <p>
-          一連四堂，齊學齊試!
+          一連四堂，齊學齊試！
           <br />
-          26 / 6（Sat) 10am - 2pm 簡介會
+          26 / 6（Sat）10am - 2pm 簡介會
           <br />
-          03 / 7（Sat) 10am - 5pm 認識塑膠議題 尋找改變
+          03 / 7（Sat） 10am - 5pm 認識塑膠議題 尋找改變
           <br />
-          10 /7（Sat) 10am - 5pm Skill Level UP !! 如何策劃、實踐?
+          10 /7（Sat）10am - 5pm Skill Level UP！！如何策劃、實踐？
           <br />
-          17 / 7（Sat) 10am - 5pm 一同設計小型社區項目
+          17 / 7（Sat）10am - 5pm 一同設計小型社區項目
           <br />
         </p>
-        <p>立即click link參加「社區走塑工作坊」✅：</p>
-        <a href="https://forms.gle/PxY6YNNsYjwqbrnw7" target="_blank">
+        <p>
+          立即click link參加「社區走塑工作坊」
+          <span role="img" aria-label="tick">
+            ✅
+          </span>
+          ：
+        </p>
+        <a
+          href="https://forms.gle/PxY6YNNsYjwqbrnw7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           https://forms.gle/PxY6YNNsYjwqbrnw7
         </a>
       </>

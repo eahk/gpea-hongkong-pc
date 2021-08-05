@@ -1,5 +1,4 @@
 import React from "react";
-import ExternalLink from "../common/externalLink";
 import Social from "../common/social";
 import SpeechBubbleJoinTeam from "../SpeedBubbleJoinTeam";
 

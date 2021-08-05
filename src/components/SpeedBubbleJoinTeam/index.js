@@ -45,7 +45,7 @@ export default props => {
         <Bubble
           devicetype={devicetype}
           src={SpeechBubble}
-          alt="有你有可能! 加入走塑社區團隊!"
+          alt="有你有可能！加入走塑社區團隊！"
         />
       </ExternalLink>
     </Wrapper>

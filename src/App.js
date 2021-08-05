@@ -1,15 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import mitt from "mitt";
 import cx from "classnames";
-// import { motion } from "framer-motion";
-// import Fade from "react-reveal/Fade";
 import "sanitize.css";
 import "flexboxgrid/css/flexboxgrid.min.css";
 import "swiper/css/swiper.css";
 import "./styles/App.scss";
 import gpLogo from "./assets/images/GP-logo-2019-TC-green-[web]-01.png";
 
-import { Router, Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import CommunityStory from "./pages/CommunityStory/";
@@ -30,32 +28,7 @@ function App() {
   const [devicetype, setdevicetype] = useState("mobile");
   //const [browserWidth, setBrowserWidth] = useState(window.innerWidth);
   const [showFormModal, setShowFormModal] = useState(false);
-  //const [enFormSubmitted, setEnFormSubmitted] = useState(false);
-  const springConfig = {
-    type: "spring",
-    stiffness: 300, // Stiffness of the spring. Higher values will create more sudden movement. Set to 100 by default.
-    damping: 200, // Strength of opposing force. If set to 0, spring will oscillate indefinitely. Set to 10 by default.
-    duration: 0.15
-  };
-  const motionFormModal = {
-    show: {
-      opacity: 1,
-      x: 0
-    },
-    hidden: {
-      opacity: 0,
-      x: "100%"
-    }
-  };
-  const motionMainButton = {
-    show: {
-      y: 0
-    },
-    hidden: {
-      y: "100%"
-    }
-  };
-  const mainButton = useRef(null);
+
   useEffect(() => {
     const handleScroll = () => {
       const yPos = window.scrollY;
@@ -91,23 +64,7 @@ function App() {
       window.removeEventListener("resize", handleWindowResize);
     };
   });
-  // show the correct value based on the current en pages
-  // useEffect(() => {
-  //   if (enPageStatus === "SUCC" && isMobile) {
-  //     setEnFormSubmitted(true);
-  //     setShowFormModal(true);
-  //   } else if (enPageStatus === "SUCC") {
-  //     setEnFormSubmitted(true);
-  //   }
-  //   if (enPageStatus === "ERROR" && isMobile) {
-  //     setShowFormModal(true);
-  //   }
-  //   window.ee.on("SHOULD_CHOOSE_MONTHLY_AMOUNT", (amount) => {
-  //     if (!showFormModal && isMobile) {
-  //       setShowFormModal(true);
-  //     }
-  //   });
-  // }, []);
+
   return (
     <HashRouter hashType="noslash">
       <div className={cx("app", { "modal-open": showFormModal })}>

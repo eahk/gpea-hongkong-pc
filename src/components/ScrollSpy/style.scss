@@ -22,7 +22,6 @@
   }
 
   ul li {
-    width: 120px;
     position: relative;
     text-align: right;
   }
@@ -36,13 +35,14 @@
   ul li .dot span {
     display: inline-block;
     letter-spacing: 1px;
-    padding: 10px 15px;
+    padding: 10px 12px;
     margin-right: 10px;
-    border-radius: 3px;
+    border-radius: 4px;
     transform: translateX(15px);
     opacity: 0;
     color: #004367;
     transition: 0.2s ease-out;
+    pointer-events: none;
   }
 
   ul li:hover .dot span {

@@ -55,7 +55,7 @@ export default props => {
           className="carousel-slice"
           showArrows={true}
         >
-          {CardData.map(card => (
+          {CardData.reverse().map(card => (
             <div key={card.id} className="slice">
               <div
                 className="slice-img-frame"
